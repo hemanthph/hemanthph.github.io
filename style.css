@@ -75,13 +75,7 @@ header {
     padding: 120px 30px 80px;
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            rgba(5, 10, 20, 0.58),
-            rgba(5, 10, 20, 0.72)
-        ),
-      background-image: url("./images/profile.jpeg");
-
+    background-image: url("./images/profile.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
