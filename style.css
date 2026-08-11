@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* ==================== NAVIGATION ==================== */
 
 header {
     position: fixed;
@@ -61,32 +64,56 @@ header {
     color: #38bdf8;
 }
 
-
-/* HERO */
+/* ==================== HERO ==================== */
 
 .hero {
     min-height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 120px 30px 80px;
+    overflow: hidden;
+
     background:
-        radial-gradient(circle at top right, #12355b 0%, transparent 35%),
-        #0b1120;
+        linear-gradient(
+            rgba(5, 10, 20, 0.58),
+            rgba(5, 10, 20, 0.72)
+        ),
+        url("./Images/profile.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at center right,
+            rgba(56, 189, 248, 0.18),
+            transparent 40%
+        );
+    z-index: 1;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 900px;
     text-align: center;
+    padding: 40px;
 }
+
+.hero-image {
+    display: none;
+}
+
 .profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #38bdf8;
-    margin-bottom: 25px;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+    display: none;
 }
 
 .intro {
@@ -108,7 +135,7 @@ header {
 }
 
 .hero p {
-    color: #cbd5e1;
+    color: #e2e8f0;
     max-width: 700px;
     margin: auto;
     font-size: 17px;
@@ -149,7 +176,7 @@ header {
 
 .social-links a {
     font-size: 25px;
-    color: #94a3b8;
+    color: #cbd5e1;
     transition: 0.3s;
 }
 
@@ -157,8 +184,7 @@ header {
     color: #38bdf8;
 }
 
-
-/* COMMON SECTION */
+/* ==================== COMMON SECTION ==================== */
 
 .section {
     max-width: 1150px;
@@ -183,8 +209,7 @@ header {
     margin-top: 8px;
 }
 
-
-/* ABOUT */
+/* ==================== ABOUT ==================== */
 
 .about-content {
     max-width: 850px;
@@ -197,8 +222,7 @@ header {
     margin-bottom: 20px;
 }
 
-
-/* SKILLS */
+/* ==================== SKILLS ==================== */
 
 .skills-container {
     display: grid;
@@ -234,8 +258,7 @@ header {
     color: #94a3b8;
 }
 
-
-/* EXPERIENCE */
+/* ==================== EXPERIENCE ==================== */
 
 .timeline {
     max-width: 850px;
@@ -268,8 +291,7 @@ header {
     margin-top: 15px;
 }
 
-
-/* PROJECTS */
+/* ==================== PROJECTS ==================== */
 
 .projects-container {
     display: grid;
@@ -305,8 +327,7 @@ header {
     font-size: 14px;
 }
 
-
-/* CERTIFICATIONS */
+/* ==================== CERTIFICATIONS ==================== */
 
 .certification-container {
     display: grid;
@@ -334,8 +355,7 @@ header {
     font-size: 14px;
 }
 
-
-/* CONTACT */
+/* ==================== CONTACT ==================== */
 
 .contact {
     text-align: center;
@@ -372,8 +392,7 @@ header {
     margin-right: 8px;
 }
 
-
-/* FOOTER */
+/* ==================== FOOTER ==================== */
 
 footer {
     text-align: center;
@@ -383,8 +402,7 @@ footer {
     font-size: 14px;
 }
 
-
-/* MOBILE */
+/* ==================== MOBILE ==================== */
 
 @media (max-width: 800px) {
 
@@ -409,7 +427,6 @@ footer {
     .certification-container {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media (max-width: 550px) {
@@ -426,12 +443,25 @@ footer {
         display: none;
     }
 
+    .hero {
+        padding: 100px 20px 60px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
     .hero h1 {
         font-size: 38px;
     }
 
     .hero h2 {
         font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 15px;
     }
 
     .section {
@@ -445,39 +475,4 @@ footer {
     .hero-buttons {
         flex-direction: column;
     }
-
-}
-/* Hero Background */
-.hero {
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.65)
-        ),
-        url("./Images/profile.jpeg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Hero Content */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    max-width: 900px;
-    padding: 40px;
-}
-
-/* Hide old profile image styling */
-.profile-photo {
-    display: none;
 }
