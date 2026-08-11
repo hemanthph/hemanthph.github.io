@@ -80,7 +80,7 @@ header {
             rgba(5, 10, 20, 0.58),
             rgba(5, 10, 20, 0.72)
         ),
-        url("./Images/profile.jpeg");
+       url("Images/profile.jpeg");
 
     background-size: cover;
     background-position: center;
