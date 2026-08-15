@@ -1,3 +1,14 @@
+<!-- Mouse Cursor Animation -->
+<div class="cursor-glow"></div>
+
+<script>
+    const cursorGlow = document.querySelector(".cursor-glow");
+
+    document.addEventListener("mousemove", (e) => {
+        cursorGlow.style.left = e.clientX + "px";
+        cursorGlow.style.top = e.clientY + "px";
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
