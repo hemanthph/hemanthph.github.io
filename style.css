@@ -289,7 +289,7 @@ header {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -299,11 +299,24 @@ header {
     border-radius: 10px;
     border: 1px solid #1e293b;
     transition: 0.3s;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
     border-color: #38bdf8;
+}
+
+/* Small project image */
+
+.project-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .project-card h3 {
@@ -319,14 +332,6 @@ header {
 .project-card span {
     color: #38bdf8;
     font-size: 14px;
-}
-.project-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: block;
 }
 
 /* ==================== CERTIFICATIONS ==================== */
