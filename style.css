@@ -483,22 +483,116 @@ footer {
         flex-direction: column;
     }
 }
-/* ==================== MOUSE CURSOR ANIMATION ==================== */
+/* ==================== HERO BLUE SPARKLES ==================== */
 
-.cursor-glow {
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: rgba(56, 189, 248, 0.35);
-    box-shadow:
-        0 0 15px rgba(56, 189, 248, 0.5),
-        0 0 35px rgba(56, 189, 248, 0.25);
+.hero-sparkles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
     pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-   transition:
-    left 0.12s ease-out,
-    top 0.12s ease-out;
+    z-index: 2;
+}
+
+.hero-sparkles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #38bdf8;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 6px #38bdf8,
+        0 0 14px rgba(56, 189, 248, 0.8);
+
+    animation: sparkleFloat 6s ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Different positions */
+
+.hero-sparkles span:nth-child(1) {
+    left: 10%;
+    top: 25%;
+    animation-delay: 0s;
+}
+
+.hero-sparkles span:nth-child(2) {
+    left: 22%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+.hero-sparkles span:nth-child(3) {
+    left: 35%;
+    top: 35%;
+    animation-delay: 2s;
+}
+
+.hero-sparkles span:nth-child(4) {
+    left: 48%;
+    top: 75%;
+    animation-delay: 3s;
+}
+
+.hero-sparkles span:nth-child(5) {
+    left: 58%;
+    top: 20%;
+    animation-delay: 1.5s;
+}
+
+.hero-sparkles span:nth-child(6) {
+    left: 68%;
+    top: 60%;
+    animation-delay: 2.5s;
+}
+
+.hero-sparkles span:nth-child(7) {
+    left: 78%;
+    top: 30%;
+    animation-delay: 4s;
+}
+
+.hero-sparkles span:nth-child(8) {
+    left: 85%;
+    top: 75%;
+    animation-delay: 3.5s;
+}
+
+.hero-sparkles span:nth-child(9) {
+    left: 92%;
+    top: 45%;
+    animation-delay: 5s;
+}
+
+.hero-sparkles span:nth-child(10) {
+    left: 15%;
+    top: 50%;
+    animation-delay: 4.5s;
+}
+
+@keyframes sparkleFloat {
+
+    0% {
+        transform: translateY(20px) scale(0.5);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-30px) scale(1);
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-60px) scale(0.3);
+        opacity: 0;
+    }
 }
 
