@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// ==================== SMOOTH SCROLLING ====================
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
@@ -19,7 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// Navbar effect while scrolling
+// ==================== NAVBAR EFFECT ====================
 
 const header = document.querySelector("header");
 
@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-// Scroll reveal animation
+// ==================== SCROLL REVEAL ====================
 
 const sections = document.querySelectorAll(".section");
 
@@ -58,19 +58,19 @@ const observer = new IntersectionObserver(
     }
 );
 
-
 sections.forEach(section => {
 
     section.style.opacity = "0";
     section.style.transform = "translateY(30px)";
-    section.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+    section.style.transition =
+        "opacity 0.7s ease, transform 0.7s ease";
 
     observer.observe(section);
 
 });
 
 
-// Update active navigation link
+// ==================== ACTIVE NAVIGATION ====================
 
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -105,7 +105,13 @@ window.addEventListener("scroll", function () {
 
 const cursorGlow = document.querySelector(".cursor-glow");
 
-document.addEventListener("mousemove", (e) => {
-    cursorGlow.style.left = e.clientX + "px";
-    cursorGlow.style.top = e.clientY + "px";
-});
+if (cursorGlow) {
+
+    document.addEventListener("mousemove", function (event) {
+
+        cursorGlow.style.left = event.clientX + "px";
+        cursorGlow.style.top = event.clientY + "px";
+
+    });
+
+}
