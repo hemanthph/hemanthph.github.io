@@ -618,3 +618,31 @@ footer {
         opacity: 0;
     }
 }
+/* ==================== MOUSE CURSOR GLOW ==================== */
+
+.cursor-glow {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #38bdf8;
+    box-shadow:
+        0 0 8px #38bdf8,
+        0 0 20px rgba(56, 189, 248, 0.8),
+        0 0 40px rgba(56, 189, 248, 0.4);
+
+    pointer-events: none;
+    z-index: 99999;
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        left 0.08s ease-out,
+        top 0.08s ease-out;
+
+    opacity: 0;
+}
+
+body:hover .cursor-glow {
+    opacity: 1;
+}
