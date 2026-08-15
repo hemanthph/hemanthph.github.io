@@ -320,6 +320,14 @@ header {
     color: #38bdf8;
     font-size: 14px;
 }
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
 
 /* ==================== CERTIFICATIONS ==================== */
 
@@ -471,4 +479,3 @@ footer {
     }
 }
 
-this is current css
