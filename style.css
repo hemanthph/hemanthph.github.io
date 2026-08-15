@@ -618,31 +618,29 @@ footer {
         opacity: 0;
     }
 }
-/* ==================== MOUSE CURSOR GLOW ==================== */
+
+/* ==================== CUSTOM MOUSE CURSOR ==================== */
 
 .cursor-glow {
     position: fixed;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+
     background: #38bdf8;
-    box-shadow:
-        0 0 8px #38bdf8,
-        0 0 20px rgba(56, 189, 248, 0.8),
-        0 0 40px rgba(56, 189, 248, 0.4);
+    border-radius: 50%;
 
     pointer-events: none;
-    z-index: 99999;
+
+    z-index: 999999;
 
     transform: translate(-50%, -50%);
 
+    box-shadow:
+        0 0 8px #38bdf8,
+        0 0 20px #38bdf8,
+        0 0 40px rgba(56, 189, 248, 0.7);
+
     transition:
-        left 0.08s ease-out,
-        top 0.08s ease-out;
-
-    opacity: 0;
-}
-
-body:hover .cursor-glow {
-    opacity: 1;
+        left 0.05s linear,
+        top 0.05s linear;
 }
