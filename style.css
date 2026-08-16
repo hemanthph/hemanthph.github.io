@@ -66,24 +66,6 @@ header {
 
 /* ==================== HERO ==================== */
 
-.hero-image {
-    display: block;
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-    height: 430px;
-
-    background-image: url("./images/profile photo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    border-radius: 4px;
-    z-index: 2;
-}
-
 .hero::before {
     content: "";
     position: absolute;
@@ -106,7 +88,17 @@ header {
 }
 
 .profile-photo {
-    display: none;
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    z-index: 2;
 }
 
 .intro {
