@@ -87,20 +87,6 @@ header {
     padding: 40px;
 }
 
-.profile-photo {
-    display: block;
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-    height: 430px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 4px;
-    z-index: 2;
-}
-
 .intro {
     color: #38bdf8;
     font-weight: bold;
