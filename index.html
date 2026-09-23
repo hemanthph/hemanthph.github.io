@@ -1,528 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hemanth P H | Embedded Systems Engineer</title>
-
-    <meta name="description"
-        content="Hemanth P H - Embedded Systems and Firmware Engineer specializing in Embedded C, STM32, ARM, RTOS, CAN, UART, SPI and I2C.">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hemanth P H — Embedded Systems & Firmware Engineer portfolio">
+  <meta name="theme-color" content="#0b1120">
+  <title>Hemanth P H | Embedded Systems & Firmware Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="cursor-glow"></div>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a class="logo" href="#home">HEMANTH<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-            <div class="logo">
-                HEMANTH<span> P H</span>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-<!-- Home -->
-<section id="home" class="hero">
-
-    <!-- Blue sparkle animation -->
-    <div class="sparkles">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
- <!-- Hero Content -->
-<div class="hero-content">
-
-    <p class="intro">HELLO, I'M</p>
-
-    <h1>HEMANTH P H</h1>
-
-    <h2>Embedded Systems &amp; Firmware Engineer</h2>
-
-        <p>
-            Embedded Systems professional passionate about developing
-            reliable firmware and hardware-interfacing solutions using
-            Embedded C, STM32 and ARM-based microcontrollers.
-        </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
-
-            </div>
-
-            <div class="social-links">
-
-                <a href="https://github.com/hemanthph"
-                   target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/hemanth-p-h/"
-                   target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <p>
-                    I am an Embedded Systems and Firmware professional
-                    with experience in automotive electronics
-                    manufacturing and testing.
-                </p>
-
-                <p>
-                    I have hands-on experience with STM32, AVR, PIC,
-                    Arduino, Embedded C, Linux and communication
-                    protocols used in embedded systems.
-                </p>
-
-                <p>
-                    I am interested in Embedded Software,
-                    Firmware Development, Automotive Electronics,
-                    RTOS and low-level hardware interfacing.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-
-        <div class="section-title">
-            <p>MY EXPERTISE</p>
-            <h2>Technical Skills</h2>
-        </div>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Programming</h3>
-                <p>Embedded C, C++, Python</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-microchip"></i>
-                <h3>Microcontrollers</h3>
-                <p>STM32, AVR, PIC, Arduino, ESP32</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-network-wired"></i>
-                <h3>Communication</h3>
-                <p>CAN, UART, SPI, I2C, RS-232, RS-485</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-memory"></i>
-                <h3>Embedded Systems</h3>
-                <p>RTOS, FreeRTOS, ADC, PWM, GPIO</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-linux"></i>
-                <h3>Operating Systems</h3>
-                <p>Linux, Embedded Linux</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-tools"></i>
-                <h3>Tools</h3>
-                <p>STM32CubeIDE, Git, GitHub, KiCad</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-  <!-- Experience -->
-<section id="experience" class="section">
-
-    <div class="section-title">
-        <p>MY JOURNEY</p>
-        <h2>Experience</h2>
-    </div>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-
-            <h3>Operating Engineer - Production</h3>
-
-            <h4>
-                HL Klemove India Private Limited
-            </h4>
-
-            <span>
-                Jun 2024 - Dec 2025 | Chennai
-            </span>
-
-            <p>
-                Worked in automotive electronics manufacturing and
-                testing for advanced automotive sensor and
-                autonomous driving solutions.
-            </p>
-
-            <ul class="experience-details">
-
-                <li>
-                    Managed day-to-day production activities while
-                    maintaining quality and process requirements.
-                </li>
-
-                <li>
-                    Performed testing and inspection of automotive
-                    electronic components and sensor-related systems.
-                </li>
-
-                <li>
-                    Monitored production processes and identified
-                    issues during manufacturing and testing.
-                </li>
-
-                <li>
-                    Coordinated with team members to achieve daily
-                    production targets and maintain smooth workflow.
-                </li>
-
-                <li>
-                    Supported troubleshooting of production and
-                    testing-related issues.
-                </li>
-
-                <li>
-                    Worked with electronic systems used in automotive
-                    sensing and autonomous driving applications.
-                </li>
-
-                <li>
-                    Followed safety, quality and standard operating
-                    procedures throughout production activities.
-                </li>
-
-            </ul>
-
-          <div class="experience-skills">
-              <h5>
-                  Skills
-              </h5>
-               Automotive Electronics, Sensor Testing, Production, Quality Testing, Leadership, Team Coordination,Team Work,Communication
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> AVAILABLE FOR EMBEDDED OPPORTUNITIES</p>
+          <h1>Embedded Systems<br><span>& Firmware Engineer</span></h1>
+          <p class="hero-text">
+            I build and troubleshoot microcontroller-based systems using Embedded C,
+            STM32, ESP32, CAN and real-time embedded technologies.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projects">View Projects <span>↗</span></a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
           </div>
-
-
-            </div>
-
+          <div class="quick-links">
+            <a href="https://github.com/hemanthph" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/in/hemanth-p-h" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
         </div>
 
-    </div>
+        <div class="hero-card reveal">
+          <div class="terminal">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>embedded.c</span></div>
+            <pre><code><span class="pink">#include</span> <span class="green">&lt;stdint.h&gt;</span>
 
-</section>
+<span class="blue">int</span> main(<span class="blue">void</span>)
+{
+    <span class="blue">uint16_t</span> sensor = ADC_Read();
 
-<!-- Projects -->
-<section id="projects" class="section">
+    CAN_Send(
+        <span class="orange">0x127</span>,
+        sensor
+    );
 
-    <div class="section-title">
-        <p>MY WORK</p>
-        <h2>Projects</h2>
-    </div>
-
-    <div class="projects-container">
-
-        <!-- Fire Fighting Robot -->
-        <div class="project-card">
-
-             <img src="./images/Fire_fight_robot.png"
-                 alt="Fire fighting robot">
-
-            <h3>Fire Fighting Robot with Live Location</h3>
-
-            <p>
-                Arduino-based autonomous fire-fighting robot designed
-                to detect fire, navigate toward the affected area,
-                and provide live location information for monitoring.
-            </p>
-
-            <span>
-                Arduino • Embedded C • Sensors • GPS • Robotics
-            </span>
-
+    <span class="blue">return</span> <span class="orange">0</span>;
+}</code></pre>
+          </div>
+          <div class="floating-chip chip-one">STM32</div>
+          <div class="floating-chip chip-two">CAN</div>
+          <div class="floating-chip chip-three">ESP32</div>
         </div>
-
-
-        <!-- CAN Communication & IoT -->
-        <div class="project-card">
-
-             <img src="./images/Can_communication.png"
-                 alt="Can communication">
-
-
-            <h3>CAN Communication & IoT Monitoring</h3>
-
-            <p>
-                CAN communication project using STM32 Blue Pill,
-                MCP2515 and SPI, with ESP32 receiving CAN messages
-                and sending data to ThingSpeak for real-time
-                IoT monitoring.
-            </p>
-
-            <span>
-                STM32 • MCP2515 • CAN • SPI • ESP32 • Wi-Fi • ThingSpeak
-            </span>
-
-        </div>
-
-
-       
-
-        <!-- Gas Detector -->
-        <div class="project-card">
-
-            <img src="./images/Gas_detector.png"
-                 alt="Gas Detector">
-
-            <h3>Gas Detector</h3>
-
-            <p>
-                Arduino-based gas detection and alert system
-                developed and simulated using Tinkercad.
-            </p>
-
-            <span>
-                Arduino • Sensors • Embedded C
-            </span>
-
-            <br><br>
-
-            <a href="#"
-               class="btn secondary">
-                View Project
-            </a>
-
-        </div>
-
-
-        <!-- Password Based Door Lock -->
-        <div class="project-card">
-
-             <img src="./images/Password_door_lock.png"
-                 alt="Door lock">
-
-            <h3>Password Based Door Lock</h3>
-
-            <p>
-                Security system using keypad, I2C LCD and
-                servo motor for password-based access control.
-            </p>
-
-            <span>
-                Arduino • Keypad • I2C • Servo
-            </span>
-
-        </div>
-
-
-        <!-- Traffic Light Control System -->
-        <div class="project-card">
-
-           <img src="./images/Traffic_light.png"
-                 alt="Traffic light">
-
-            <h3>Traffic Light Control System</h3>
-
-            <p>
-                Arduino-based traffic light control system designed
-                to simulate automated traffic signal sequencing
-                for a four-way junction.
-            </p>
-
-            <span>
-                Arduino • Embedded C/C++ • Digital I/O
-            </span>
-
-            <br><br>
-
-            <a href="https://github.com/hemanthph/Traffic-Light-Control-System-Arduino"
-               target="_blank"
-               class="btn secondary">
-                View Project
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-</section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-
-        <div class="section-title">
-            <p>MY QUALIFICATIONS</p>
-            <h2>Certifications & Education</h2>
-        </div>
-
-        <div class="certification-container">
-
-            <div class="certification-card">
-
-                <h3>Embedded Firmware Training</h3>
-
-                <p>
-                    SMEC LABS
-                </p>
-
-                <span>
-                    Jan 2026 - Jun 2026
-                </span>
-
-            </div>
-
-
-            <div class="certification-card">
-
-                <h3>Diploma in Electronics & Communication Engineering</h3>
-
-                <p>
-                    NSS Polytechnic College, Pandalam
-                </p>
-
-            </div>
-
-
-            <div class="certification-card">
-
-                <h3>BSc Chemistry</h3>
-
-                <p>
-                    St. Cyril's College, Adoor
-                </p>
-
-            </div>
-
-
-            <div class="certification-card">
-
-                <h3>PCB Design</h3>
-
-                <p>
-                    Simplilearn SkillUp
-                </p>
-
-            </div>
-
-        </div>
-
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
     </section>
 
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-
-        <div class="section-title">
-            <p>GET IN TOUCH</p>
-            <h2>Contact Me</h2>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 — ABOUT</p>
+          <h2>Turning electronics into <span>working systems.</span></h2>
         </div>
-
-        <p>
-            I'm currently looking for opportunities in Embedded
-            Systems, Firmware Development and Automotive Electronics.
-        </p>
-
-        <div class="contact-links">
-
-           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hemanthph85@gmail.com" 
-              target="_blank">
-              Email Me
-           </a>
-
-            <a href="https://github.com/hemanthph"
-               target="_blank">
-                <i class="fab fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/"
-               target="_blank">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </a>
-
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">I am an Embedded Systems and Firmware professional with experience in automotive electronics manufacturing and testing.</p>
+            <p>I have hands-on exposure to STM32, ESP32, AVR, PIC, Arduino, Embedded C, Linux and communication protocols including CAN, UART, SPI and I2C.</p>
+            <p>My goal is to work on reliable firmware, hardware interfacing, testing and debugging for embedded and automotive applications.</p>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><strong>1.5+</strong><span>Years Automotive<br>Electronics Experience</span></div>
+            <div class="stat"><strong>06</strong><span>Months Embedded<br>Firmware Training</span></div>
+            <div class="stat"><strong>05+</strong><span>MCU / Platform<br>Exposure</span></div>
+            <div class="stat"><strong>04</strong><span>Core Serial<br>Protocols</span></div>
+          </div>
         </div>
-
+      </div>
     </section>
 
+    <section class="section dark-section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — SKILLS</p>
+          <h2>My technical <span>toolbox.</span></h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Programming</h3><p>Embedded C, C/C++, Python</p><div class="tags"><span>C</span><span>Embedded C</span><span>C++</span><span>Python</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">μC</div><h3>Microcontrollers</h3><p>Firmware development and peripheral interfacing.</p><div class="tags"><span>STM32</span><span>ESP32</span><span>AVR</span><span>PIC</span><span>Arduino</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">↔</div><h3>Communication</h3><p>Serial and robust embedded communication.</p><div class="tags"><span>CAN</span><span>UART</span><span>SPI</span><span>I2C</span><span>RS-232</span><span>RS-485</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">RT</div><h3>Embedded Systems</h3><p>Peripherals, timing and real-time concepts.</p><div class="tags"><span>FreeRTOS</span><span>ADC</span><span>PWM</span><span>GPIO</span><span>Timers</span><span>Interrupts</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">PCB</div><h3>PCB & Tools</h3><p>Design workflow, debugging and development tools.</p><div class="tags"><span>EAGLE</span><span>STM32CubeIDE</span><span>Git</span><span>GitHub</span><span>Linux</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">QA</div><h3>Testing</h3><p>Production testing, troubleshooting and validation.</p><div class="tags"><span>Functional</span><span>Integration</span><span>Regression</span><span>Debugging</span><span>Root Cause</span></div></article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 — EXPERIENCE</p>
+          <h2>Where I built my <span>foundation.</span></h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">JUN 2024 — DEC 2025</div>
+            <div class="timeline-content">
+              <h3>Operating Engineer — Production</h3>
+              <h4>HL Klemove India Private Limited · Chennai</h4>
+              <p>Worked in automotive electronics manufacturing and testing for sensor and autonomous-driving-related systems.</p>
+              <ul>
+                <li>Supported production monitoring, testing and inspection.</li>
+                <li>Identified defects and abnormal results during manufacturing and testing.</li>
+                <li>Supported troubleshooting and root-cause analysis of production issues.</li>
+                <li>Coordinated with quality and maintenance teams and verified corrective actions.</li>
+              </ul>
+              <div class="tags"><span>Automotive Electronics</span><span>Testing</span><span>Troubleshooting</span><span>Team Coordination</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            © 2026 Hemanth P H. All Rights Reserved.
-        </p>
+    <section class="section dark-section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 — PROJECTS</p>
+          <h2>Things I've <span>built.</span></h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-body">
+              <p class="project-type">EMBEDDED + IoT</p>
+              <h3>CAN Communication & IoT Monitoring</h3>
+              <p>STM32 reads an analog sensor through ADC, sends the value through CAN using MCP2515, and ESP32 receives the frame and sends the data over Wi-Fi to ThingSpeak.</p>
+              <div class="flow"><span>STM32</span><b>→</b><span>MCP2515</span><b>→</b><span>CAN</span><b>→</b><span>ESP32</span><b>→</b><span>ThingSpeak</span></div>
+              <div class="tags"><span>STM32</span><span>Embedded C</span><span>CAN</span><span>SPI</span><span>ESP32</span><span>Wi-Fi</span><span>ThingSpeak</span></div>
+              <a class="project-link" href="https://github.com/hemanthph" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+          <article class="project reveal"><div class="project-number">02</div><div class="project-body"><p class="project-type">EMBEDDED</p><h3>Gas Detector</h3><p>Arduino-based gas detection and alert system developed and simulated using Tinkercad.</p><div class="tags"><span>Arduino</span><span>Sensors</span><span>Embedded C</span></div></div></article>
+          <article class="project reveal"><div class="project-number">03</div><div class="project-body"><p class="project-type">SECURITY</p><h3>Password Based Door Lock</h3><p>Keypad, I2C LCD and servo-based access control system for password-protected entry.</p><div class="tags"><span>Arduino</span><span>Keypad</span><span>I2C</span><span>Servo</span></div></div></article>
+          <article class="project reveal"><div class="project-number">04</div><div class="project-body"><p class="project-type">CONTROL SYSTEM</p><h3>Traffic Light Control System</h3><p>Four-way traffic signal simulation using automated sequencing and digital I/O.</p><div class="tags"><span>Arduino</span><span>Embedded C/C++</span><span>Digital I/O</span></div></div></article>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            Embedded Systems & Firmware Engineer
-        </p>
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 — EDUCATION</p>
+          <h2>Learning by <span>building.</span></h2>
+        </div>
+        <div class="education-grid">
+          <article class="edu-card reveal"><span class="edu-year">2026</span><h3>Embedded Firmware Training</h3><h4>SMEC LABS · Jan 2026 — Jun 2026</h4><p>Embedded C, STM32, ESP32, communication protocols, RTOS concepts and hands-on firmware development.</p></article>
+          <article class="edu-card reveal"><span class="edu-year">2022 — 2024</span><h3>Diploma in Electronics & Communication Engineering</h3><h4>NSS Polytechnic College, Pandalam</h4><p>Electronics, communication systems, microcontrollers and practical hardware fundamentals.</p></article>
+          <article class="edu-card reveal"><span class="edu-year">2019 — 2022</span><h3>BSc Chemistry</h3><h4>St. Cyril's College, Adoor · Kerala University</h4><p>Built a scientific foundation before transitioning into electronics and embedded systems.</p></article>
+          <article class="edu-card reveal"><span class="edu-year">CERTIFICATION</span><h3>PCB Design</h3><h4>Simplilearn SkillUp</h4><p>PCB design fundamentals and layout concepts.</p></article>
+        </div>
+      </div>
+    </section>
 
-    </footer>
-   <div class="cursor-glow"></div>
+    <section class="cta section" id="contact">
+      <div class="container cta-inner reveal">
+        <p class="eyebrow">06 — CONTACT</p>
+        <h2>Let's build something<br><span>reliable together.</span></h2>
+        <p>I'm currently looking for opportunities in Embedded Systems, Firmware Development and Automotive Electronics.</p>
+        <div class="cta-buttons">
+          <a class="btn primary" href="mailto:hemanthph85@gmail.com">Email Me ↗</a>
+          <a class="btn secondary" href="https://github.com/hemanthph" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn secondary" href="https://linkedin.com/in/hemanth-p-h" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-   <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Hemanth P H</span>
+      <span>Embedded Systems & Firmware Engineer</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
