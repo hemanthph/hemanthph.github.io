@@ -40,3 +40,66 @@ pre{padding:30px;font:500 15px/1.9 ui-monospace,SFMono-Regular,Consolas,monospac
 .cursor-glow{position:fixed;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,.08),transparent 68%);pointer-events:none;z-index:-1;transform:translate(-50%,-50%)}
 @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero-card{min-height:350px}.skills-grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:120px}.nav-links{gap:18px}}
 @media(max-width:700px){.menu-btn{display:block}.nav-links{position:absolute;top:76px;left:4%;right:4%;display:none;flex-direction:column;align-items:stretch;padding:18px;background:rgba(8,13,24,.98);border:1px solid var(--line);border-radius:12px}.nav-links.open{display:flex}.nav-links a{padding:10px}.skills-grid,.projects-grid,.education-grid{grid-template-columns:1fr}.project.featured{grid-column:auto;display:block;padding:30px}.project.featured .project-number{margin-bottom:18px}.project.featured h3{font-size:27px}.terminal{transform:none}.floating-chip{display:none}.section{padding:85px 0}.footer-inner{flex-direction:column}.stats{margin-top:15px}}
+
+/* =========================================================
+   SIMPLE HOME PAGE
+   ========================================================= */
+.hero-content {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-content .eyebrow {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  font-size: clamp(52px, 8vw, 90px);
+  line-height: 1;
+  letter-spacing: -.05em;
+  margin: 0;
+}
+
+.hero-content h2 {
+  margin: 22px 0;
+  font-size: clamp(25px, 4vw, 42px);
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+.hero-intro {
+  max-width: 760px;
+  color: #dbe4ee;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.hero-content .hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media(max-width:700px){
+  .hero-content h1 { font-size: 50px; }
+  .hero-content h2 { font-size: 27px; }
+  .hero-intro { font-size: 15px; }
+  .hero-description { font-size: 14px; }
+  .hero-content .hero-buttons { flex-direction: column; }
+  .hero-content .hero-buttons .btn { width: 100%; }
+}
